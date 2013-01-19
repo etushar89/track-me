@@ -67,7 +67,7 @@ function placeMarker(map, loc){
 
 function updateLable(loc,dt){
 	//var dt=new Date();
-	document.getElementById("loc").innerHTML="Recent Latitude: "+loc.lat()+", Longitude: "+loc.lng()+" @ "+dt+"<br>Recent Address: "+currAddress;
+	document.getElementById("loc").innerHTML="Recent Latitude: "+loc.lat().toFixed(4)+", Longitude: "+loc.lng().toFixed(4)+" @ "+dt+"<br>Recent Address: "+currAddress;
 }
 
 function revGeoCode(loc){
