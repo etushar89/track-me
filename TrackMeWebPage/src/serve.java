@@ -1,5 +1,3 @@
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -23,9 +21,9 @@ public class serve extends HttpServlet {
 		private float longi;
 		private String dt;
 
-		public locInfo() {			
-			lati = 18.471838f;
-			longi = 73.861568f;
+		public locInfo() {
+			lati = 41.8394295f;
+			longi = -87.6165938f;
 		}
 
 		void setLati(float lati){
