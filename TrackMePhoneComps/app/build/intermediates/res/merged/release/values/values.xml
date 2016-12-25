@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_desc">\nperiodically tracks and sends location info of this device to track-me.co.in server.\n\n</string>
-    <string name="app_name">Track-Me Phone Service</string>
-    <string name="exit_this">exit this</string>
-    <string name="hello">Hello World, TrackUsPhoneCompsActivity!</string>
-    <string name="start_service">start service</string>
-    <string name="stop_service">stop service</string>
-</resources>
