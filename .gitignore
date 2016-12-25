@@ -6,3 +6,9 @@
 *.ear
 
 TrackMeWebPage/.settings/
+
+.DS_Store
+.gradle/
+.idea/
+
+TrackMePhoneComps/app/*
