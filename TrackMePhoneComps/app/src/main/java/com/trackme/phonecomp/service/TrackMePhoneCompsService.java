@@ -12,7 +12,8 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.telephony.SmsManager;
 
-import java.io.IOException;
+import java.io.DataOutputStream;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -34,6 +35,7 @@ public class TrackMePhoneCompsService extends Service {
     private List<Location> locs;
 
     private URL trackMeURL;
+    private String urlStr = "http://ec2-54-147-123-111.compute-1.amazonaws.com:8080/track-me-web-1/serve";
     private HttpURLConnection httpConn;
     private OutputStream outStr;
 
@@ -64,7 +66,7 @@ public class TrackMePhoneCompsService extends Service {
         locManager = (LocationManager) getSystemService(location_context);
 
         try {
-            trackMeURL = new URL("http://track-me.co.in/serve");
+            trackMeURL = new URL(urlStr);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
@@ -137,8 +139,8 @@ public class TrackMePhoneCompsService extends Service {
     /**
      * Determines whether one Location reading is better than the current Location fix
      *
-     * @param location            The new Location that you want to evaluate
-     * @param currentBestLocation The current Location fix, to which you want to compare the new one
+     * @param location1 The new Location that you want to evaluate
+     * @param location2 The current Location fix, to which you want to compare the new one
      */
     private boolean isBetterLocation(Location location1, Location location2) {
         if (location1 == null) {
@@ -167,19 +169,32 @@ public class TrackMePhoneCompsService extends Service {
 
     private void sendLocationHTTP(Location location) {
         String s = location.getLatitude() + "/" + location.getLongitude() + "/" + currentDateTimeString;
+        URL url;
+        HttpURLConnection connection = null;
         try {
-            httpConn = (HttpURLConnection) trackMeURL.openConnection();
-            httpConn.setDoOutput(true);
-            httpConn.setChunkedStreamingMode(s.getBytes().length);
-            outStr = httpConn.getOutputStream();
-            outStr.write(s.getBytes());
-            outStr.flush();
-            outStr.close();
-            httpConn.disconnect();
-        } catch (IOException e) {
-            e.printStackTrace();
+            url = new URL(urlStr);
+            connection = (HttpURLConnection) url.openConnection();
+            connection.setDoOutput(true);
+            connection.setRequestMethod("POST");
+            connection.setRequestProperty("Content-Type", "text/html; charset=UTF-8");
+            connection.connect();
+
+            //Send request
+            DataOutputStream wr = new DataOutputStream(
+                    connection.getOutputStream());
+            wr.writeBytes(s);
+            wr.flush();
+            wr.close();
+
+            InputStream is;
+            int response = connection.getResponseCode();
+            System.out.print(response);
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            if (connection != null) {
+                connection.disconnect();
+            }
         }
     }
 
