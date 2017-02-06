@@ -1,0 +1,103 @@
+@CHARSET "ISO-8859-1";
+
+html {
+	height: 100%
+}
+
+#head {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 27px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 900;
+	color: white;
+	text-align: center;
+}
+
+#cont {
+	background-color: white;
+	width: 80%;
+	margin: 0px auto 0px auto;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+#map_canvas {
+	width: 50%;
+	height: 40%;
+	margin: auto;
+	background-color: white;
+}
+
+div.transbox {
+	height: auto;
+	width: 50%;
+	background-color: #FF9;
+	margin: auto;
+	border-top-width: 0.5px;
+	border-right-width: 0.5px;
+	border-bottom-width: 0.5px;
+	border-left-width: 0.5px;
+	border-top-style: ridge;
+	border-right-style: ridge;
+	border-bottom-style: ridge;
+	border-left-style: ridge;
+	opacity: 0.5;
+}
+
+div.transbox {
+	height: auto;
+	width: 50%;
+	margin: auto;
+	background-color: #ffffff;
+	border: 1px solid black;
+	opacity: 0.3;
+	filter: alpha(opacity = 60); /* For IE8 and earlier */
+}
+
+div.transbox:HOVER {
+	height: auto;
+	width: 50%;
+	margin: auto;
+	background-color: #ffffff;
+	border: 1px solid black;
+	opacity: 1.0;
+	filter: alpha(opacity = 60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+	height: auto;
+	width: 100%;
+	font-style: normal;
+	margin: auto;
+	color: black;
+}
+
+hr.thick {
+	width: 50%;
+	height: 0.5px;
+	background-color: gray;
+	margin: auto;
+}
+
+hr.thin {
+	width: 50%;
+	height: 0.5px;
+	background-color: gray;
+	margin: auto;
+}
+
+.center {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background-image: url(./back.jpg);
+	background-size: cover;
+}
