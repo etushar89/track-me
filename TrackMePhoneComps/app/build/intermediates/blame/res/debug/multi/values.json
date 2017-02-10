@@ -1,0 +1,121 @@
+[
+    {
+        "outputFile": "C:\\Users\\Tushar\\track-me\\TrackMePhoneComps\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 127,
+                    "endOffset": 178
+                },
+                "from": {
+                    "file": "C:\\Users\\Tushar\\track-me\\TrackMePhoneComps\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 356,
+                        "endColumn": 127,
+                        "endOffset": 479
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 183,
+                    "endColumn": 59,
+                    "endOffset": 238
+                },
+                "from": {
+                    "file": "C:\\Users\\Tushar\\track-me\\TrackMePhoneComps\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 134,
+                        "endColumn": 59,
+                        "endOffset": 189
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 243,
+                    "endColumn": 47,
+                    "endOffset": 286
+                },
+                "from": {
+                    "file": "C:\\Users\\Tushar\\track-me\\TrackMePhoneComps\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 307,
+                        "endColumn": 47,
+                        "endOffset": 350
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 291,
+                    "endColumn": 73,
+                    "endOffset": 360
+                },
+                "from": {
+                    "file": "C:\\Users\\Tushar\\track-me\\TrackMePhoneComps\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 73,
+                        "endOffset": 128
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 365,
+                    "endColumn": 55,
+                    "endOffset": 416
+                },
+                "from": {
+                    "file": "C:\\Users\\Tushar\\track-me\\TrackMePhoneComps\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 195,
+                        "endColumn": 55,
+                        "endOffset": 246
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 421,
+                    "endColumn": 53,
+                    "endOffset": 470
+                },
+                "from": {
+                    "file": "C:\\Users\\Tushar\\track-me\\TrackMePhoneComps\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 252,
+                        "endColumn": 53,
+                        "endOffset": 301
+                    }
+                }
+            }
+        ]
+    }
+]

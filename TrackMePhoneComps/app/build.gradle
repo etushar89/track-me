@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 android {
     signingConfigs {
-        config {
+        sign {
             keyAlias 'signkey'
             keyPassword 'Pinkman1#'
-            storeFile file('/home/tushar/android-keystore.jks')
+            storeFile file('E:/newks.jks')
             storePassword 'Pinkman1#'
         }
     }
@@ -14,12 +14,23 @@ android {
         applicationId "com.trackme.phonecomp.activity"
         minSdkVersion 7
         targetSdkVersion 7
+        signingConfig signingConfigs.sign
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.sign
+        }
+    }
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
 }
 

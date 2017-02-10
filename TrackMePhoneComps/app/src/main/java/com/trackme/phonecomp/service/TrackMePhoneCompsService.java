@@ -35,7 +35,7 @@ public class TrackMePhoneCompsService extends Service {
     private List<Location> locs;
 
     private URL trackMeURL;
-    private String urlStr = "http://ec2-54-147-123-111.compute-1.amazonaws.com:8080/track-me-web-1/serve";
+    private String urlStr = "http://ec2-52-204-89-215.compute-1.amazonaws.com:8080/track-me/serve";
     private HttpURLConnection httpConn;
     private OutputStream outStr;
 
