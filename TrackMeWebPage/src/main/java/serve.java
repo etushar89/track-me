@@ -64,8 +64,8 @@ public class serve extends HttpServlet {
         private String dt;
 
         public locInfo() {
-            lati = 41.8394295f;
-            longi = -87.6165938f;
+            lati = 40.710289f;
+            longi = -74.012290f;
         }
 
         float getLati() {
